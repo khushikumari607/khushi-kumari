@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Amount p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.Amount input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.From, .To {
+    width: 45%;
+}
+
+.From p, .To p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+.select-container img {
+    width: 32px;
+    height: 32px;
+}
+
+.select-container select {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    width: 100%;
+}
+
+.fa-exchange {
+    font-size: 22px;
+    color: #2a5298;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.fa-exchange:hover {
+    transform: rotate(180deg);
+}
+
+.msg {
+    margin: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #2a5298;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2a5298;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
